@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .align-element {
+    @apply max-w-5xl mx-auto px-4;
+  }
+}
+.div_{
+  display: flex;
+  gap: 10px;
+}
+.radius{
+  transform: scale(.96);
+  transition: all 0.3s ease;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.radius:hover{
+cursor: pointer;
+}
+.radius.radius:active{
+  transform: scale(1.25);
+}
